@@ -6,6 +6,12 @@ html {
   margin: 0;
 }
 
+html,
+body {
+  background-color: hsl(218, 28%, 13%) !important;
+  color: white !important;
+}
+
 header {
   display: flex;
   justify-content: space-between;
