@@ -4,13 +4,6 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: red;
-}
-
-.container {
-  width: 90%;
-  max-width: 1400px;
-  margin: 20px auto;
 }
 
 header {
@@ -33,4 +26,16 @@ header img {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item img {
+  margin: auto;
+  width: auto;
+  max-height: 100px;
 }
