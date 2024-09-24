@@ -4,18 +4,23 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-}
-
-html,
-body {
   background-color: hsl(218, 28%, 13%) !important;
   color: white !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin: 100px 0;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
 }
 
 header img {
@@ -26,12 +31,26 @@ header img {
   display: inline-block;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.get-started-btn {
+  background-color: hsl(176, 68%, 64%, 0.8);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-started-btn:hover {
+  background-color: hsl(176, 68%, 64%);
 }
 
 .grid-section {
@@ -44,4 +63,34 @@ header img {
   margin: auto;
   width: auto;
   max-height: 100px;
+}
+
+.fylo-works {
+  border-bottom: 1px solid;
+  width: max-content;
+}
+
+.fylo-works img {
+  height: 70%;
+  width: auto;
+  margin: 5px 0 0 7px;
+}
+
+i {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
