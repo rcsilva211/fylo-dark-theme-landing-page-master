@@ -15,7 +15,7 @@
     />
     <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
   </head>
-  <body class="container">
+  <body>
     <header class="container">
       <img src="./images/logo.svg" alt="logo" />
       <div class="navigation">
@@ -25,6 +25,7 @@
       </div>
     </header>
     <main>
+      <section id="hero" class="container">
       <div class="text-center">
         <img class="mx-auto" src="./images/illustration-intro.png" alt="illustration" />
         <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -34,8 +35,9 @@
         </p>
         <a href="#" class="get-started-btn">Get Started</a>
       </div>
-
-      <section id="grid-section" class="text-center grid-section">
+    </section>
+      <section id="grid-section" class="text-center">
+        <div class="grid-section container">
         <div class="grid-item">
           <img src="./images/icon-access-anywhere.svg" alt="access anywhere" />
           <h2>Access your files, anywhere</h2>
@@ -68,8 +70,10 @@
             to be securely stored and shared.
           </p>
         </div>
+      </div>
       </section>
       <section id="productive-section">
+        <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <img src="./images/illustration-stay-productive.png" alt="stay productive" />
@@ -90,8 +94,10 @@
             /></a>
           </div>
         </div>
+      </div>
       </section>
       <section id="testimonials">
+        <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <p>Fylo has improved our team productivity by an order of magnitude.</p>
@@ -124,9 +130,11 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="cta">
+        <div class="container">
         <h2>Get early access today</h2>
         <p>
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
@@ -142,9 +150,11 @@
           <button class="get-started-btn" type="submit">
             Get Started For Free
           </button>
+        </div>
       </section>
     </main>
     <footer>
+      <div class="container">
       <div class="row">
         <img src="./images/logo.svg" style="width: 150px; height: auto;" alt="">
       </div>
@@ -180,6 +190,7 @@
           </a>
         </div>
       </div>
+    </div>
     </footer>
 
     <script
